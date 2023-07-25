@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    style
+        include ../static/style.css
+</head>
+<body>
+    <div class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#membership">Membership Plans</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <h1>Welcome to PowerPulse Gym</h1>
+
+    <div class="form-container">
+        <form action="/" method="post" id="contact">
+            <div class="form-group">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" name="name" id="name" class="form-input" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="age" class="form-label">Age:</label>
+                <input type="text" name="age" id="age" class="form-input" placeholder="Enter your age" required>
+            </div>
+            <div class="form-group">
+                <label for="gender" class="form-label">Gender:</label>
+                <input type="text" name="gender" id="gender" class="form-input" placeholder="Enter your gender" required>
+            </div>
+            <div class="form-group">
+                <label for="address" class="form-label">Address:</label>
+                <textarea name="address" id="address" class="form-textarea" cols="30" rows="4" placeholder="Enter your address" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="more" class="form-label">More about you:</label>
+                <textarea name="more" id="more" class="form-textarea" cols="30" rows="4" placeholder="More about you.." required></textarea>
+            </div>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

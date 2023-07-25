@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Working with ejs</title>
+</head>
+<body>
+    <%- include("common/header"); %>
+    <h1>Welcome to ejs <%= data.name%></h1>
+    <h2>your email is: <%= data.email%></h2>
+    <h3>Your skills are:</h3>
+    <ul>
+        <% data.skills.forEach((items)=>{ %>
+            <li><%= items%></li>
+        <% })%>
+    </ul>
+</body>
+</html>

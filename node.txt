@@ -1,0 +1,66 @@
+== vs ===
+console on browser vs console in node
+node is used in server side scripting
+global module vs non global module
+
+node js is single threaded, non blocking and event driven. 
+
+-----------------------------------------------------
+
+package.json is the most imp file. 
+
+if modules get deleted -> just type <npm install> in the terminal
+
+nodemon package hepls to run code easily we dont need to run it everytime
+
+Event Loop
+-----------
+call stack -> node API -> callback Queue 
+
+
+
+------------------------------------------
+EJS: EJS or Embedded Javascript Templating is a templating engine used by Node.js.
+
+How do version numbers work?
+1.2.3
+
+first num -> major version
+sec num -> functionalities added
+third num -> patch fix
+
+npm i <package_name> -g ( for global installation )
+
+sendFile() is a method provided by Express.js to send a file as a response to an HTTP request. It allows you to serve static files, such as HTML, images, CSS, JavaScript, etc., directly to the client.
+sendFile() is primarily used for serving files directly, and it doesn't involve any view engine for templating. It is useful for serving files like static web pages, images, downloads, etc.
+
+render() is a method used when you want to render a view template using a view engine. A view engine is a template engine that allows you to create dynamic HTML pages by embedding variables and logic in the template.
+
+types of middleware:
+1. application level middleware
+2. router level middleware
+3. error handling middleware
+4. built in middleware
+5. third party middleware
+
+why we use middleware:
+-Modularity and Reusability
+-Request Processing
+-Logging and Debugging
+-Authentication and Authorization
+-Error Handling
+-CORS and Security
+-Compression and Caching
+-Orderly Execution
+-Third-Party Integrations
+
+App-level Middleware:
+Definition: App-level middleware is registered using the app.use() method on the Express application object (app). It applies to all routes and is executed for every incoming request that matches the specified path or pattern.
+Application Scope: App-level middleware is defined at the top level of your application and affects the entire application, regardless of the specific route being accessed. It is commonly used for tasks that need to be performed globally for all incoming requests.
+Example: Common examples of app-level middleware include body parsing middleware like express.json() and express.urlencoded(), logging middleware, CORS middleware, and authentication middleware that applies to all routes.
+
+Route-level Middleware:
+Definition: Route-level middleware is registered using the app.METHOD() methods (e.g., app.get(), app.post(), etc.) in combination with app.use() for specific routes. It applies only to the routes it is attached to.
+Route Scope: Route-level middleware is specific to particular routes or groups of routes. It allows you to apply middleware only to those routes that require certain tasks to be done before the route handler is executed.
+Example: Route-level middleware is commonly used for tasks like user authentication, data validation, or handling specific route-related concerns.
+
